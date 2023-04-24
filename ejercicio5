@@ -1,0 +1,15 @@
+// 5.Dado como dato el importe de venta de una factura, calcular el valor correspondiente
+// al precio final, sumándole el IVA (21% del valor de venta). Mostrar los tres valores.
+
+
+Console.WriteLine("ingresar el importe de venta de la factura: ");
+float factura = float.Parse(Console.ReadLine());
+
+float iva = factura * 21;
+float iva2 = iva / 100;
+
+Console.WriteLine("el valor del IVA es de: " + iva2);
+
+float resultado = factura + iva2;
+
+Console.WriteLine("el valor total de la factura con iva es de: " + resultado);
