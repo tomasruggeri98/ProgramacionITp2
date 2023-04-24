@@ -1,0 +1,13 @@
+// 6.Calcular el sueldo de un operario conociendo la cantidad de horas que trabajó en el
+// mes y el valor de la hora trabajada.
+
+Console.WriteLine("Escribe cuantas horas trabajo el operario: ");
+int hora = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresa el valor de la hora: ");
+int valor = int.Parse(Console.ReadLine());
+
+
+// trabajó 25 días al mes.
+int salario = (hora + valor) * 25;
+Console.WriteLine("El salario del operario es de: " + salario);
