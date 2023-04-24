@@ -1,0 +1,18 @@
+// 3.Calcular el área y el volumen de un paralelepípedo de base rectangular
+
+Console.WriteLine("ingresar el valor de la base: ");
+float bbase = float.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresar el valor de la altura: ");
+float altura = float.Parse(Console.ReadLine());
+
+Console.WriteLine("ingresar el valor de la profundidad: ");
+float profundidad = float.Parse(Console.ReadLine());
+
+float area = 2 * (altura * bbase + bbase * profundidad + altura * profundidad);
+
+Console.WriteLine("el valor del area es: " + area);
+
+float vol = bbase * altura * profundidad;
+
+Console.WriteLine("el valor del volumen es de: " + vol);
