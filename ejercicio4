@@ -1,0 +1,24 @@
+// 4.Ingresar 2 horas T1 y T2 en el formato hh: mm: ss y calcular la diferencia que hay
+// entre ellas. Suponer que T2 es mayor que T1.
+
+Console.WriteLine("Ingresar hora1: ");
+int H1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar minutos1: ");
+int M1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar segundos1: ");
+int S1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar hora2: ");
+int H2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar minutos2: ");
+int M2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar segundos2: ");
+int S2 = int.Parse(Console.ReadLine());
+
+
+
+DateTime Tiempo1 = new DateTime(1, 1, 1, H1, M1, S1);
+DateTime Tiempo2 = new DateTime(1, 1, 1, H2, M2, S2);
+
+TimeSpan dif = Tiempo2 - Tiempo1;
+Console.WriteLine("la diferencia es: " + dif);
+
