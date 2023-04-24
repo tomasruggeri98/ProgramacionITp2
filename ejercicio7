@@ -1,0 +1,11 @@
+// 7. Dada la distancia en kilómetros recorrida por un automóvil y la cantidad de litros de
+// combustible consumidos en el trayecto, determinar el rendimiento promedio en Kms por litro.
+
+Console.WriteLine("Ingresa cuantos kms recorrió el auto: ");
+int km = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingresa cuantos litros consumio el auto: ");
+int litros = int.Parse(Console.ReadLine());
+
+int rendimiento = km / litros;
+Console.WriteLine("El rendimiento de combustible por km es de: " + rendimiento);
