@@ -1,0 +1,19 @@
+// 1. Dados como datos cinco números reales obtener el promedio de los mismos e
+// informar el resultado.
+
+Console.WriteLine("Ingresar Valor1: ");
+int v1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar Valor2: ");
+int v2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar Valor3: ");
+int v3 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar Valor4: ");
+int v4 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingresar Valor5: ");
+int v5 = int.Parse(Console.ReadLine());
+
+int suma = v1 + v2 + v3 + v4 + v5;
+
+int promedio = suma / 5;
+
+Console.WriteLine("El promedio de los valores ingresados es: " + promedio);
