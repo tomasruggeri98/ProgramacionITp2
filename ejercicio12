@@ -1,0 +1,15 @@
+// 12.Calcular la superficie y volumen del cilindro dados su altura y radio de la base
+
+Console.WriteLine("ingresar radio de la base del cilindro:");
+float radio = float.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese altura del cilindro:");
+float altura = float.Parse(Console.ReadLine());
+
+double area = 2 * Math.PI * radio * altura + 2 * Math.PI * Math.Pow(radio, 2);
+
+double Volumen = Math.PI * Math.Pow(radio, 2) * altura;
+
+Console.WriteLine("El área del cilindro es de: " + area);
+
+Console.WriteLine("El volumen del cilindro es de: " + Volumen);
