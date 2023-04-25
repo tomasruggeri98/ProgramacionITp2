@@ -1,0 +1,20 @@
+// 8. Dado el importe bruto de una factura, calcular el resultado de bonificar con un 4%.
+// Luego, calcular el IVA. Finalmente informar el importe bruto, el valor de la
+// bonificación, el importe bruto bonificado, el monto correspondiente al IVA y el importe neto resultante.
+
+Console.WriteLine("Ingrese importe de la factura: ");
+float importe = float.Parse(Console.ReadLine());
+
+Console.WriteLine("El importe es de: " + importe);
+
+double bono = importe * 0.04;
+
+Console.WriteLine("el bono es de: " + bono);
+
+double iva = (importe + bono) * 0.21;
+
+Console.WriteLine("El IVA es de: " + iva);
+
+double total = bono + iva;
+
+Console.WriteLine("El total es de: " + total);
