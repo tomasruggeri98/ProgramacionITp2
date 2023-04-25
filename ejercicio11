@@ -1,0 +1,30 @@
+// 11. Ingresar un monto en pesos y realizar el desglose en valores: 100, 50, 20, 10, 5, 2, 1, 0.50, 0.25, 0.10, 0.05.
+
+
+Console.WriteLine("ingrese un monto en pesos: ");
+float monto = float.Parse(Console.ReadLine());
+
+double M1 = monto / 100;
+double M2 = monto / 50;
+double M3 = monto / 20;
+double M4 = monto / 10;
+double M5 = monto / 5;
+double M6 = monto / 2;
+double M7 = monto / 1;
+double M8 = monto / 0.5;
+double M9 = monto / 0.25;
+double M10 = monto / 0.10;
+double M11 = monto / 0.05;
+
+Console.WriteLine("El desgloce en valores es equivalente a: ");
+Console.WriteLine(M1 + "billetes de 100 pesos");
+Console.WriteLine(M2 + "billetes de 50 pesos");
+Console.WriteLine(M3 + "billetes de 20 pesos");
+Console.WriteLine(M4 + "billetes de 10 pesos");
+Console.WriteLine(M5 + "billetes de 5 pesos");
+Console.WriteLine(M6 + "billetes de 2 pesos");
+Console.WriteLine(M7 + "monedas de 1 peso");
+Console.WriteLine(M8 + "monedas de 50 centavos");
+Console.WriteLine(M9 + "monedas de 25 centavos");
+Console.WriteLine(M10 + "monedas de 10 centavos");
+Console.WriteLine(M11 + "monedas de 5 centavos");
