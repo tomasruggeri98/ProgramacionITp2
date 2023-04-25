@@ -1,0 +1,13 @@
+//este problema no lo llegaba a comprender por temas matematicos, por lo que pedi ayuda a algunos compañeros
+//comento esto ya que el code no es 100% mío y podria haber similitudes.
+
+//13.Dado un ángulo en decimal expresarlo en sexagesimal.
+
+Console.Write("ingresar el angulo en decimales: ");
+double angulo = double.Parse(Console.ReadLine());
+
+int grados = (int)angulo;
+int min = (int)((angulo - grados) * 60);
+int sec = (int)(((angulo - grados) * 60 - min) * 60);
+
+Console.WriteLine($"el angulo sexagesimal es: {grados}° {min}' {sec}''");
