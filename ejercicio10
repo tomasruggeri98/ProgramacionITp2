@@ -1,0 +1,20 @@
+
+// 10.Ingresar 3 valores de 3 variables X, Y y Z. Se desea obtener una rotación de sus
+//valores, es decir que el contenido de Z pase por X, el contenido de X pase a Y, y el
+// contenido de Y pase a Z. Mostrar luego las variables en el mismo orden en que seingresaron (X, Y, Z).
+
+Console.WriteLine("Ingrese un valor para X:");
+int X = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese un valor para Y:");
+int Y = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese un valor para Z:");
+int Z = int.Parse(Console.ReadLine());
+
+int T = Z;
+Z = Y;
+Y = X;
+X = T;
+
+Console.WriteLine("X: " + X);
+Console.WriteLine("Y: " + Y);
+Console.WriteLine("Z: " + Z);
